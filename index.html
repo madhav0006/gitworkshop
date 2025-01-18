@@ -76,5 +76,30 @@ git checkout new-feature
 # Merge a branch into the current branch
 git merge main
     </code></pre>
+
+    <h2>Resolving Merge Conflicts</h2>
+    <p>Sometimes, when merging branches, you may encounter conflicts. Here is how you can resolve them:</p>
+    <pre><code>
+# Attempt to merge the branch
+git merge branch-name
+
+# If there are conflicts, Git will mark the conflicted areas in the files
+# Open the files and resolve the conflicts manually
+
+# After resolving the conflicts, add the resolved files to the staging area
+git add resolved-file.txt
+
+# Commit the merge
+git commit -m "Resolved merge conflict"
+    </code></pre>
+    <h2>Advanced Git Commands</h2>
+<ul>
+    <li><code>git stash</code> - Stash changes in a dirty working directory</li>
+    <li><code>git rebase</code> - Reapply commits on top of another base tip</li>
+    <li><code>git cherry-pick &lt;commit&gt;</code> - Apply the changes introduced by some existing commits</li>
+    <li><code>git revert &lt;commit&gt;</code> - Revert some existing commits</li>
+    <li><code>git log</code> - Show commit logs</li>
+    <li><code>git reset &lt;commit&gt;</code> - Reset current HEAD to the specified state</li>
+</ul>
 </body>
 </html>
