@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Basics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Git Basics</h1>
+    <h2>Introduction</h2>
+    <p>Git is a distributed version control system that helps developers collaborate on projects. Here are some basic Git commands to get you started:</p>
+    
+    <h2>Common Git Commands</h2>
+    <ul>
+        <li><code>git init</code> - Initialize a new Git repository</li>
+        <li><code>git clone &lt;repository&gt;</code> - Clone an existing repository</li>
+        <li><code>git status</code> - Check the status of your files in the working directory</li>
+        <li><code>git add &lt;file&gt;</code> - Add a file to the staging area</li>
+        <li><code>git commit -m "message"</code> - Commit changes with a message</li>
+        <li><code>git push</code> - Push changes to a remote repository</li>
+        <li><code>git pull</code> - Pull changes from a remote repository</li>
+        <li><code>git branch</code> - List, create, or delete branches</li>
+        <li><code>git checkout &lt;branch&gt;</code> - Switch to a different branch</li>
+        <li><code>git merge &lt;branch&gt;</code> - Merge a branch into the current branch</li>
+    </ul>
+    
+    <h2>Example Workflow</h2>
+    <pre><code>
+# Initialize a new repository
+git init
+
+# Clone an existing repository
+git clone https://github.com/user/repository.git
+
+# Check the status of your files
+git status
+
+# Add a file to the staging area
+git add filename.txt
+
+# Commit changes with a message
+git commit -m "Initial commit"
+
+# Push changes to a remote repository
+git push origin main
+
+# Pull changes from a remote repository
+git pull origin main
+
+# Create a new branch
+git branch new-feature
+
+# Switch to the new branch
+git checkout new-feature
+
+# Merge a branch into the current branch
+git merge main
+    </code></pre>
+</body>
+</html>
